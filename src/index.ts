@@ -1,7 +1,6 @@
+import { PORT } from './config.js';
 import app from './app.js';
 
-const port = process.env.PORT || 8080;
-
-app.listen(port, () => {
-    console.log(`Listening on port ${port}`);
+app.listen(PORT, () => {
+    console.log(`Proxy started and istening on port: ${PORT}`);
 });
